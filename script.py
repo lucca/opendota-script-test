@@ -33,7 +33,7 @@ def main():
                 # For a match to meet the criteria, it must be above 3000 MMR,
                 # and there can't be over 200 total matches collected already.
                 # In addition, it must not be a duplicate match (it can't exist in repeatIDs).
-                if(int(matches[i]['avg_mmr']) > 3000 and matchTotal < 200 and
+                if((matches[i]['avg_mmr']) > 3000 and matchTotal < 200 and
                         not matches[i]['match_id'] in repeatIDs):
                     # Stores all of the needed match data in correct order to prepare for writing to
                     # the tsv.
